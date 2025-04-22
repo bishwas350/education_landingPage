@@ -28,21 +28,22 @@ function HeroPart() {
       imageUrl: "/hero4.png",
     
     },
-    // {
-    //   imageUrl: "https://avatars.githubusercontent.com/u/20110627",
-    //   profileUrl: "/",
-    // },
-    // {
-    //   imageUrl: "https://avatars.githubusercontent.com/u/106103625",
-    //   profileUrl: "/",
-    // },
-    // {
-    //   imageUrl: "https://avatars.githubusercontent.com/u/59228569",
-    //   profileUrl: "/",
-    // },
     
   ];
-  
+  const left =[
+    {
+      id:1,
+      img:"/lefthero.png",
+      discription:"UI/UX Design",
+      name:'Donald Robert'
+    },
+    {
+      id:2,
+      img:"/lefthero2.png",
+      discription:"Web Development",
+      name:'John White'
+    },
+  ]
   return (
     <>
     <section>
@@ -77,7 +78,22 @@ function HeroPart() {
                width={100}/>
             </div>
           </div>
-          <div className="w-[20%]"></div>
+          <div className="w-[20%]">
+            <div className="p-3 bg-[#ffffff] rounded-md -mr-10 z-50 relative mt-10">
+              <h3 className="font-medium font-inter text-xl text-[#1A2434] mb-2">Certified Instructor</h3>
+              {
+                left.map((item)=>(
+                  <div className="space-y-3 flex space-x-3" key={item.id}>
+                    <img src={item.img} alt="" />
+                    <div className="">
+                    <h3 className="font-medium font-inter text-xl text-[#1A2434]">{item.name}</h3>
+                    <p className="font-inter font-light text-[#575455] text-[14px]">{item.discription}</p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
           <div className="w-[30%] justify-end flex">
             <img src={khalamma.src} alt="" />
           </div>
