@@ -95,7 +95,7 @@ function HeroPart() {
             </div>
           </div>
           <div className="w-[30%] justify-end flex">
-            <img src={khalamma.src} alt="" />
+            <img src={khalamma.src} alt="khalamma" />
           </div>
           </div>
         </Container>
