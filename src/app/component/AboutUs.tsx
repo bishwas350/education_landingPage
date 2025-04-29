@@ -62,8 +62,33 @@ function AboutUs() {
               </div>
             </div>
           </div>
-            <div className="" ref={counterRef}>
-                <h1>{counter ? <CountUp end={99} start={0} delay={0} duration={5}/> :"0"}</h1>
+            <div className="mt-5" ref={counterRef}>
+                <div className="flex gap-10 justify-between items-center">
+                <div className="">
+                <h1 className="font-plus font-bold text-6xl text-[#1A2434]">{counter ? <CountUp end={15} start={0} delay={0} duration={5}/> :"0"} 
+                <span className="text-[#A4074D]">+</span>
+                </h1>
+                <p className="font-inter text-xl">Years of experience</p>
+                </div>
+                <div className="">
+                <h1 className="font-plus font-bold text-6xl text-[#1A2434]">{counter ? <CountUp end={100} start={0} delay={0} duration={5}/> :"0"} 
+                <span className="text-[#A4074D]">K</span>
+                </h1>
+                <p className="font-inter text-xl">Years of experience</p>
+                </div>
+                <div className="">
+                <h1 className="font-plus font-bold text-6xl text-[#1A2434]">{counter ? <CountUp end={45} start={0} delay={0} duration={5}/> :"0"} 
+                <span className="text-[#A4074D]">+</span>
+                </h1>
+                <p className="font-inter text-xl">Years of experience</p>
+                </div>
+                <div className="">
+                <h1 className="font-plus font-bold text-6xl text-[#1A2434]">{counter ? <CountUp end={98} start={0} delay={0} duration={5}/> :"0"} 
+                <span className="text-[#A4074D]">%</span>
+                </h1>
+                <p className="font-inter text-xl">Years of experience</p>
+                </div>
+                </div>
             </div>
         </Container>
       </section>
