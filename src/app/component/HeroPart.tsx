@@ -49,36 +49,31 @@ function HeroPart() {
     <section>
       <div className="bg-[#F9FCFF] py-5">
         <Container>
-          <div className="flex">
-          <div className="w-1/2">
-            <h1 className="font-plus font-bold text-6xl text-[#1A2434] leading-24">Master Digital Skills with Ease!</h1>
-            <p className="font-inter  text-[#1A2434] text-xl ">Unlock Digital Mastery Effortlessly! Explore and enhance your skills with our user-friendly platform.</p>
+          <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 px-4 md:px-0 mb-8 md:mb-0">
+            <h1 className="font-plus font-bold text-3xl md:text-6xl text-[#1A2434] leading-tight md:leading-24">Master Digital Skills with Ease!</h1>
+            <p className="font-inter text-[#1A2434] text-lg md:text-xl mt-4">Unlock Digital Mastery Effortlessly! Explore and enhance your skills with our user-friendly platform.</p>
             <div className="flex mt-4">
-              <p className="h-5 text-6xl text-[#A4074D] ">|</p>
+              <p className="h-5 text-4xl md:text-6xl text-[#A4074D]">|</p>
             <AvatarCircles numPeople={900} avatarUrls={pepole} />
             </div>
-            <div className="flex gap-4">
-              <button className="py-4 px-14 hover:text-white text-black font-bold font-inter text-xl  hover:bg-[#A4074D] bg-transparent outline-2 rounded-md outline-[#A4074D]">Start learning</button>
-              <button className="py-4 px-14 hover:text-white text-black font-bold font-inter text-xl  hover:bg-[#A4074D] bg-transparent outline-2  outline-[#A4074D] rounded-md">Learn more</button>
+            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+              <button className="py-3 md:py-4 px-8 md:px-14 hover:text-white text-black font-bold font-inter text-lg md:text-xl hover:bg-[#A4074D] bg-transparent outline-2 rounded-md outline-[#A4074D] w-full sm:w-auto">Start learning</button>
+              <button className="py-3 md:py-4 px-8 md:px-14 hover:text-white text-black font-bold font-inter text-lg md:text-xl hover:bg-[#A4074D] bg-transparent outline-2 outline-[#A4074D] rounded-md w-full sm:w-auto">Learn more</button>
             </div>
-            <p className="font-inter  text-[#1A2434] text-xl mt-2">Trusted by</p>
-            <div className="flex mt-3 gap-3" >
+            <p className="font-inter text-[#1A2434] text-xl mt-6">Trusted by</p>
+            <div className="flex flex-wrap mt-3 gap-3">
               <img src={google.src} alt=""
-              height={100}
-              width={100}
+              className=""
               />
-              <img src={canva.src} alt="" 
-               height={100}
-               width={100}/>
-              <img src={amazon.src} alt="" 
-               height={100}
-               width={100}/>
+             
+              <img src={amazon.src} alt="" />
+              <img src={amazon.src} alt="" />
               <img src={sketch.src} alt="" 
-               height={100}
-               width={100}/>
+              className=""/>
             </div>
           </div>
-          <div className="w-[20%]">
+          <div className="hidden md:block md:w-[20%]">
             <div className="p-3 bg-[#ffffff] rounded-md -mr-10 z-50 relative mt-10">
               <h3 className="font-medium font-inter text-xl text-[#1A2434] mb-2">Certified Instructor</h3>
               {
@@ -94,8 +89,8 @@ function HeroPart() {
               }
             </div>
           </div>
-          <div className="w-[30%] justify-end flex">
-            <img src={khalamma.src} alt="khalamma" />
+          <div className="hidden md:flex md:w-[30%] justify-end">
+            <img src={khalamma.src} alt="khalamma" className="max-w-full h-auto" />
           </div>
           </div>
         </Container>

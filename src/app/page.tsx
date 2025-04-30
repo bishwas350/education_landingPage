@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import HeroPart from "./component/HeroPart";
 import Exprience from "./component/Exprience";
 import AboutUs from "./component/AboutUs";
+import Footer from "./component/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroPart/>
       <Exprience/>
       <AboutUs/>
+      <Footer/>
     </main>
   );
 }
